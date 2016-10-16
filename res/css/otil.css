@@ -43,14 +43,26 @@ body, html {
   }
 }
 
-.btn{
-  font-size: 40px;
-
-}
-
 .navbar{
   background-color: #eee;
   padding: 0;
+}
+
+.download-btn{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #C0C0C0;
+}
+
+.download-btn:hover{
+  background-color: #C0C0C0;
+  text-decoration: none;
+  
 }
 
 .navbar-nav{

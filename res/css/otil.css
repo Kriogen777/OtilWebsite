@@ -4,6 +4,17 @@ body, html {
   color: #777;
 }
 
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 100;
+  }
+
+.affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
 .century {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
@@ -106,12 +117,11 @@ h3 {
   text-decoration: none;
 }
 
-.footer {
-  color: #ddd;
-  background-color: #282E34;
-  text-align: center;
-  padding: 20px 80px;
-  text-align: justify;
+
+#fix-navbar{
+   padding:0px;
+   height:20px;
+   width:100%;
 }
 
 .social-btn{
@@ -130,7 +140,7 @@ h3 {
 
 .bgimg-1 {
   background-image: url("../img/OtilBannerNoText.png");
-  min-height: 100%;
+  min-height: 600px;
 } 
 
 .bgimg-2 {
@@ -163,4 +173,12 @@ h3 {
   .bgimg-2{
     min-height: 50px;
   }
+}
+
+.footer {
+  color: #ddd;
+  background-color: #282E34;
+  text-align: center;
+  padding: 20px 80px;
+  text-align: justify;
 }

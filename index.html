@@ -6,10 +6,37 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="res/css/otil.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 72
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        //window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 <body>
 
-<div class="bgimg-1">
+<div class="bgimg-1" id="top">
   <div class="caption">
     <span class="century heading">Otil</span><br>
     <span class="century subHeading">All in one system diagnostics utility</span><br><br>
@@ -17,19 +44,20 @@
   </div>
 </div>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li><a>About</a></li>
-      <li><a>OpenSource</a></li>
-      <li><a>Functionality</a></li>
-      <li><a>Share</a></li>
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="600">
+  <div id="fix-navbar" class="container-fluid">
+    <ul class="nav navbar-nav" >
+      <li><a href="#about" >About</a></li>
+      <li><a href="#openSource">OpenSource</a></li>
+      <li><a href="#functionality">Functionality</a></li>
+      <li><a href="#share">Share</a></li>
+      <li style="float: right;"><a title="Go to top" href="#top"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
     </ul>
   </div>
 </nav>
 
 <div class="content-box">
-  <h3>About</h3><br>
+  <h3 id="about">About</h3><br>
   <p class="content">
     Everything you need to know about your computer in one place! <br>
     This utility was designed to replace the need to start up multiple utilities to find information about your system as a whole. <br>
@@ -40,7 +68,7 @@
 <div class="bgimg-2"></div>
 
 <div class="content-box">
-  <h3>Open Source</h3><br>
+  <h3 id="openSource">Open Source</h3><br>
   <p class="content">
     "Why open source?" <br>
     The main reason to open source is that Otil is meant to be shared. A lot of effort was put into making Otil what it is today and solves problems faced by many trying to develop similar solutions.
@@ -52,7 +80,7 @@
 <div class="bgimg-2"></div>
 
 <div class="content-box">
-  <h3>Functionality</h3><br>
+  <h3 id="functionality">Functionality</h3><br>
   <!--
   Bootstrap gallery here - captions explain functionality
   WARN: gets outdated easily
@@ -64,7 +92,7 @@
   <div class="footer">
         <span>
       <div class="row">
-      <div class="col-md-6">
+      <div id="share" class="col-md-6">
         <a href="[full link to your Twitter]">
           <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
         </a>
@@ -74,7 +102,7 @@
         <a href="[full link to your Google+ page]">
           <img title="Google+" alt="Google+" src="https://socialmediawidgets.files.wordpress.com/2014/03/14_google.png" width="35" height="35" />
         </a>
-        <a href="[full link to your GitHub page]">
+        <a href="https://github.com/Kriogen777/Otil">
           <img title="GitHub" alt="GitHub" src="http://image.flaticon.com/icons/png/512/25/25231.png" width="35" height="35" />
         </a>
       </div>

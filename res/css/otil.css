@@ -132,6 +132,10 @@ body, html {
   margin-top: 50px;
 }
 
+.social-btn{
+   text-align: right;
+}
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;

@@ -114,6 +114,11 @@ h3 {
   text-align: justify;
 }
 
+.social-btn{
+  text-align: right;
+}
+
+
 .bgimg-1, .bgimg-2{
   position: relative;
   opacity: 0.65;

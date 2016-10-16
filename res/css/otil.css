@@ -18,9 +18,8 @@ body, html {
   width: 100%;
 }
 
-.affix-bottom {
-  position: absolute;
-  width: 100%;  
+.affix + .content-box {
+  margin-top: 72px;
 }
 
 
@@ -48,7 +47,7 @@ body, html {
 
 .caption span {
   display: block;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .licensing {
@@ -110,6 +109,7 @@ h3 {
 .navbar {
   background-color: #eee;
   padding: 0;
+  border-radius: 0px;
 }
 
 .navbar-nav {
@@ -132,6 +132,12 @@ h3 {
   color: black;
   border: 2px solid rgb(245, 245, 245);
   background-color: rgba(245, 245, 245, 0.4);
+  /* Transitions for hover smoothly */
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
 }
 
 .download-btn:hover {
@@ -162,38 +168,38 @@ h3 {
 
 .bgimg-1 {
   background-image: url("../img/OtilBannerNoText.png");
-  min-height: 600px;
+  height: 600px;
 } 
 
 .bgimg-2 {
   background-image: url("../img/OtilBannerNoText.png");
-  min-height: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 1200px) {
   .bgimg-1 {
-    min-height: 400px;
+    height: 400px;
   }
   .bgimg-2 {
-    min-height: 50px;
+    height: 50px;
   }
 }
 
 @media screen and (max-width: 1016px) {
   .bgimg-1 {
-    min-height: 350px;
+    height: 350px;
   }
   .bgimg-2 {
-    min-height: 50px;
+    height: 50px;
   }
 }
  
 @media screen and (max-width: 756px) {
   .bgimg-1 {
-    min-height: 200px;
+    height: 200px;
   }
   .bgimg-2 {
-    min-height: 50px;
+    height: 50px;
   }
 }
 

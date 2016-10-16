@@ -43,10 +43,19 @@ body, html {
   }
 }
 
+.btn{
+  font-size: 40px;
+
+}
+
 .navbar{
-  text-align: center;
   background-color: #eee;
   padding: 0;
+}
+
+.navbar-nav{
+  margin-left: 9%;
+  margin-right: 5%;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {

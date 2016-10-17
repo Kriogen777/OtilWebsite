@@ -2,12 +2,25 @@
 <html>
 <head>
   <title>Otil</title>
+  <meta property="og:image"         content="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="res/css/otil.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="res/nicescroll/jquery.nicescroll.js"></script>
+
+  <script src=""></script>
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    // Facebook share button
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 <script>
 $(document).ready(function(){
   // Add nicescroll
@@ -111,22 +124,23 @@ $(document).ready(function(){
       <span>
     <div class="row">
     <div class="col-md-6">
-      <a href="[full link to your Twitter]">
+      <div class="media-btn">
+       <a href="https://twitter.com/intent/tweet" target="_blank">
         <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
-      </a>
-      <a href="[full link to your Facebook page]">
-        <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
-      </a>
-      <a href="[full link to your Google+ page]">
-        <img title="Google+" alt="Google+" src="https://socialmediawidgets.files.wordpress.com/2014/03/14_google.png" width="35" height="35" />
-      </a>
-      <a href="https://github.com/Kriogen777/Otil">
+      </a></div>
+      <div class="fb-share-button" data-href="https://kriogen777.github.io/OtilWebsite/" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkriogen777.github.io%2FOtilWebsite%2F&amp;src=sdkpreparse"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" /></a></div>
+      <div class="media-btn">
+      <a href="https://plus.google.com/share?url=https://kriogen777.github.io/OtilWebsite/" target="_blank">
+        <img  title="Google+" alt="Google+" src="https://socialmediawidgets.files.wordpress.com/2014/03/14_google.png" width="35" height="35" />
+      </a></div>
+      <div class="media-btn">
+      <a href="https://github.com/Kriogen777/Otil" target="_blank">
         <img title="GitHub" alt="GitHub" src="http://image.flaticon.com/icons/png/512/25/25231.png" width="35" height="35" />
-      </a>
+      </a></div>
     </div>
     <div class="col-md-6 social-btn">
       Website by
-      <a href="https://github.com/Kastrodiyas">Michael Van Heerden</a>
+      <a href="https://github.com/Kastrodiyas" target="_blank">Michael Van Heerden</a>
         <span class="licensing" >Licensing: MIT, Firefox</span>
     </div>
     </div>

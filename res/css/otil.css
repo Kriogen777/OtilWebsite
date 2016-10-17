@@ -9,9 +9,9 @@ body, html {
 }
 
 .affix {
-      top: 0;
-      width: 100%;
-      z-index: 100;
+    top: 0;
+    width: 100%;
+    z-index: 100;
   }
 
 .affix-top {
@@ -72,32 +72,7 @@ h3 {
   text-align: justify;
 }
 
-@media screen and (max-width: 1200px) {
-  .heading {
-    font-size: 100px;
-  }
-  .subHeading {
-    font-size: 40px;
-  }
-}
 
-@media screen and (max-width: 1016px) {
-  .heading {
-    font-size: 80px;
-  }
-  .subHeading {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 756px) {
-  .heading {
-    font-size: 40px;
-  }
-  .subHeading {
-    font-size: 15px;
-  }
-}
 
 .navbar {
   background-color: #eee;
@@ -169,32 +144,7 @@ h3 {
   height: 30px;
 }
 
-@media screen and (max-width: 1200px) {
-  .bgimg-1 {
-    height: 400px;
-  }
-  .bgimg-2 {
-    height: 50px;
-  }
-}
 
-@media screen and (max-width: 1016px) {
-  .bgimg-1 {
-    height: 350px;
-  }
-  .bgimg-2 {
-    height: 50px;
-  }
-}
- 
-@media screen and (max-width: 756px) {
-  .bgimg-1 {
-    height: 200px;
-  }
-  .bgimg-2 {
-    height: 50px;
-  }
-}
 
 .fb-share-button {
   margin-right: 5px;
@@ -219,3 +169,31 @@ h3 {
   padding: 20px 80px;
   text-align: justify;
 }
+
+@media screen and (max-width: 1920px) {
+  .bgimg-1 {
+    height: 700px;
+  }
+  .heading {
+    font-size: 250px;
+  }
+  .subHeading {
+    font-size: 90px;
+  }
+  .download-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .caption span {
+    margin-bottom: 5px;
+  }
+  .social-btn {
+    font-size: 20px;
+  }
+  .licensing {
+    font-size: 15px;
+  }
+} 

@@ -208,3 +208,39 @@ h3 {
     font-size: 18px;
   }
 } 
+@media screen and (max-width: 1280px) {
+  .bgimg-1 {
+    height: 600px;
+  }
+  .heading {
+    font-size: 200px;
+  }
+  .subHeading {
+    font-size: 70px;
+  }
+  .download-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .social-btn {
+    font-size: 15px;
+  }
+  .licensing {
+    font-size: 12px;
+  }
+  .content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .content-box {
+    text-align: left;
+    font-size: 15px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+} 

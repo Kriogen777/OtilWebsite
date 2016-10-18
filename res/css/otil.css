@@ -22,7 +22,6 @@ body, html {
   margin-top: 72px;
 }
 
-
 .century {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
@@ -48,6 +47,10 @@ body, html {
 .caption span {
   display: block;
   margin-bottom: 15px;
+}
+
+.go-to-top{
+  float: right;
 }
 
 h3 {
@@ -144,8 +147,6 @@ h3 {
   height: 30px;
 }
 
-
-
 .fb-share-button {
   margin-right: 5px;
   float: left;
@@ -208,6 +209,44 @@ h3 {
     font-size: 18px;
   }
 } 
+@media screen and (max-width: 1366px) {
+  .bgimg-1 {
+    height: 650px;
+  }
+  .heading {
+    font-size: 200px;
+  }
+  .subHeading {
+    font-size: 70px;
+  }
+  .download-btn {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+  .caption span {
+    margin-bottom: 5px;
+  }
+  .social-btn {
+    font-size: 15px;
+  }
+  .licensing {
+    font-size: 12px;
+  }
+  .content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .content-box {
+    text-align: left;
+    font-size: 15px;
+  }
+  .nav {
+    font-size: 15px;
+  }
+} 
 @media screen and (max-width: 1280px) {
   .bgimg-1 {
     height: 600px;
@@ -242,5 +281,159 @@ h3 {
   }
   .nav {
     font-size: 12px;
+  }
+} 
+@media screen and (max-width: 1024px) {
+  .bgimg-1 {
+    height: 550px;
+  }
+  .heading {
+    font-size: 140px;
+  }
+  .subHeading {
+    font-size: 50px;
+  }
+  .download-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .social-btn {
+    font-size: 13px;
+  }
+  .licensing {
+    font-size: 10px;
+  }
+  .content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .content-box {
+    text-align: left;
+    font-size: 15px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+} 
+@media screen and (max-width: 980px) {
+  .bgimg-1 {
+    height: 500px;
+  }
+  .heading {
+    font-size: 150px;
+  }
+  .subHeading {
+    font-size: 50px;
+  }
+  .download-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .social-btn {
+    font-size: 15px;
+  }
+  .licensing {
+    font-size: 12px;
+  }
+  .content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .content-box {
+    text-align: left;
+    font-size: 15px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+} 
+@media screen and (max-width: 800px) {
+  .bgimg-1 {
+    height: 490px;
+  }
+  .heading {
+    font-size: 120px;
+  }
+  .subHeading {
+    font-size: 40px;
+  }
+  .download-btn {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .social-btn {
+    font-size: 12px;
+  }
+  .licensing {
+    font-size: 10px;
+  }
+  .content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .content-box {
+    text-align: left;
+    font-size: 15px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+} 
+@media screen and (max-width: 350px) {
+  .bgimg-1 {
+    height: 300px;
+  }
+  .heading {
+    font-size: 70px;
+  }
+  .subHeading {
+    font-size: 15px;
+  }
+  .download-btn {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  
+  .phone-nav{
+    width: 100%;
+  }
+  
+  .container-fluid{
+    margin-bottom: 20px;
+  }
+  .social-btn {
+    font-size: 12px;
+  }
+  .licensing {
+    font-size: 10px;
+  }
+  .content {
+    text-align: left;
+    font-size: 12px;
+  }
+  .content-box {
+    text-align: left;
+    font-size: 12px;
+  }
+  .nav {
+    font-size: 9px;
   }
 } 

@@ -1,126 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Otil</title>
-  <meta property="og:image"         content="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="res/css/otil.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="res/nicescroll/jquery.nicescroll.js"></script>
+    <title>Otil</title>
+    <meta property="og:image" content="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png"/>
 
-  <script src=""></script>
-<div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    // Facebook share button
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="res/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-<script>
-$(document).ready(function(){
-  // Add nicescroll
-  $("html").niceScroll({styler:"fb", scrollspeed:50});
+    <script>(function (d, s, id) {
+        // Facebook share button
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      // Note: the -72 is the full size, including padding etc, (border-box) of the navbar.
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 72
-      }, 800, function(){
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    // Note: the -72 is the full size, including padding etc, (border-box) of the navbar.
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 72
+                    }, 750, function () {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        //window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        //window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
 
-</script>
+    </script>
 </head>
 <body>
 
 <div class="bgimg-1" id="top">
-  <div class="caption">
-    <span class="century heading">Otil</span>
-    <span class="century subHeading">All in one system diagnostics utility</span>
-    <button type="button" class="download-btn" onclick="window.location='http://otil.sourceforge.net'">Download</button>
-  </div>
+    <div class="caption">
+        <span class="century heading">Otil</span>
+        <span class="century subHeading">All in one system diagnostics utility</span>
+        <button type="button" class="download-btn" onclick="window.location='http://otil.sourceforge.net'">Download
+        </button>
+    </div>
 </div>
 
 <nav class="navbar navbar-default" data-spy="affix" data-offset-top="600">
-  <div id="fix-navbar" class="container-fluid">
-    <ul class="nav navbar-nav" >
-      <li><a href="#about" >About</a></li>
-      <li><a href="#openSource">OpenSource</a></li>
-      <li><a href="#functionality">Functionality</a></li>
-      <li><a href="#share">Share</a></li>
-      <li class="go-to-top"><a class="hide" title="Go to top" href="#top"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
-    </ul>
-  </div>
+    <div id="fix-navbar" class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#openSource">OpenSource</a></li>
+            <li><a href="#functionality">Functionality</a></li>
+            <li><a href="#share">Share</a></li>
+            <li class="go-to-top">
+                <a title="Go to top" href="#top">
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
-<div class="content-box" id="about">
-  <h3>About</h3><br>
-  <p class="content">
-    Otil is a Windows system utility with the goal of telling you everything you need to know about your computer in one place. <br>
-    This utility was designed to replace the need to start up multiple utilities to find information about your system as a whole. <br>
-    <br>
-    The name Otil is short for One Utility, and is meant to further the idea that Otil is the only utility app that you should ever need. <br>
-    <br>
-    Inspiration came from a number of current utility packages and a frustration with having to open them all up to see the full picture. <br>
-    Just to name a few: <br>
-    <div class="align-left">
-    <ul>
-      <li>CPUID CPU-Z</li>
-      <li>CPUID HWMon</li>
-      <li>OpenHardwareMonitor</li>
-      <li>DxDiag</li>
-      <li>Task Manager (of course)</li>
-    </ul>
+<div class="row content-box" id="about">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>About</h3>
+        <p>
+            Otil is a Windows system utility with the goal of telling you everything you need to know about your
+            computer in
+            one place. <br>
+            This utility was designed to replace the need to start up multiple utilities to find information about your
+            system as a whole. <br>
+            <br>
+            The name Otil is short for One Utility, and is meant to further the idea that Otil is the only utility app
+            that
+            you should ever need. <br>
+            <br>
+            Inspiration came from a number of current utility packages and a frustration with having to open them all up
+            to
+            see the full picture. <br>
+            Just to name a few: <br>
+        </p>
+        <ul>
+            <li>CPUID CPU-Z</li>
+            <li>CPUID HWMon</li>
+            <li>OpenHardwareMonitor</li>
+            <li>DxDiag</li>
+            <li>Task Manager (of course)</li>
+        </ul>
+        <p>
+            The idea with Otil is that the whole is greater than the sum of its parts.
+        </p>
     </div>
-    <br>
-    The idea with Otil is that the whole is greater than the sum of its parts.
-  </p>
 </div>
 
 <div class="bgimg-2"></div>
 
-<div class="content-box" id="openSource">
-  <h3>Open Source</h3><br>
-  <p class="content">
-    "Why open source?" <br>
-    The main reason to open source is that Otil is meant to be shared. A lot of effort was put into making Otil what it is today and solves problems faced by many trying to develop similar solutions.<br>
-    Finally, nobody is perfect. Otil will always have room for improvement and a community, more that just one or two developers, is key to its continued growth.<br>
-    Fellow developers, fork us on <a href="https://github.com/Kriogen777/Otil">GitHub</a>.
-  </p>
+<div class="row content-box" id="openSource">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Open Source</h3>
+        <p class="content">
+            "Why open source?" <br>
+            The main reason to open source is that Otil is meant to be shared. A lot of effort was put into making Otil
+            what
+            it is today and solves problems faced by many trying to develop similar solutions.<br>
+            Finally, nobody is perfect. Otil will always have room for improvement and a community, more that just one
+            or
+            two developers, is key to its continued growth.<br>
+            Fellow developers, fork us on <a href="https://github.com/Kriogen777/Otil">GitHub</a>.
+        </p>
+    </div>
 </div>
 
 <div class="bgimg-2"></div>
 
-<div class="content-box" id="functionality">
-  <h3>Functionality</h3><br>
-  <!--
-  Bootstrap gallery here - captions explain functionality
-  WARN: gets outdated easily
-  -->
+<div class="row content-box" id="functionality">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Functionality</h3><br>
+        <!--
+        Bootstrap gallery here - captions explain functionality
+        WARN: gets outdated easily
+        -->
+    </div>
 </div>
-
 
 
 <div class="footer" id="share">
@@ -129,28 +142,37 @@ $(document).ready(function(){
     <div class="col-md-6">
       <div class="media-btn">
        <a href="https://twitter.com/intent/tweet" target="_blank">
-        <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+        <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png"
+             width="35" height="35"/>
       </a></div>
-      <div class="media-btn" data-href="https://kriogen777.github.io/OtilWebsite/" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkriogen777.github.io%2FOtilWebsite%2F&amp;src=sdkpreparse"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" /></a></div>
+      <div class="media-btn" data-href="https://kriogen777.github.io/OtilWebsite/" data-layout="button"
+           data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                           href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkriogen777.github.io%2FOtilWebsite%2F&amp;src=sdkpreparse"><img
+              title="Facebook" alt="Facebook"
+              src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35"/></a></div>
       <div class="media-btn">
       <a href="https://plus.google.com/share?url=https://kriogen777.github.io/OtilWebsite/" target="_blank">
-        <img  title="Google+" alt="Google+" src="https://socialmediawidgets.files.wordpress.com/2014/03/14_google.png" width="35" height="35" />
+        <img title="Google+" alt="Google+" src="https://socialmediawidgets.files.wordpress.com/2014/03/14_google.png"
+             width="35" height="35"/>
       </a></div>
       <div class="media-btn">
       <a href="https://github.com/Kriogen777/Otil" target="_blank">
-        <img title="GitHub" alt="GitHub" src="http://image.flaticon.com/icons/png/512/25/25231.png" width="35" height="35" />
+        <img title="GitHub" alt="GitHub" src="http://image.flaticon.com/icons/png/512/25/25231.png" width="35"
+             height="35"/>
       </a></div>
     </div>
     <div class="col-md-6 social-btn">
       Website by
       <a href="https://github.com/Kastrodiyas" target="_blank">Michael Van Heerden</a>
-        <span class="licensing" >Licensing: MIT, Firefox</span>
+        <span class="licensing">Licensing: MIT, Firefox</span>
     </div>
     </div>
   </span>
 
 </div>
 
+<link rel="stylesheet" type="text/css" href="res/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="res/css/otil.css">
 
 </body>
 </html>

@@ -1,484 +1,398 @@
+/* General Styles */
 body, html {
-  height: 100%;
-  margin: 0;
-  color: #777;
+    height: 100%;
+    margin: 0;
+    color: #777;
 }
 
 .a, a:hover, a:active, a:focus {
-  outline: 0;
+    outline: 0;
+}
+
+.bgimg-1 {
+    background-image: url("../img/OtilBannerNoText.png");
+    height: 600px;
+}
+
+.bgimg-2 {
+    background-image: url("../img/OtilBannerNoText.png");
+    height: 30px;
+}
+
+.bgimg-1, .bgimg-2 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Top-down stying */
+
+/* Banner */
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+}
+
+.caption span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.century {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.heading {
+    font-size: 200px;
+}
+
+.subHeading {
+    font-size: 70px;
+    padding: 0 10px;
+}
+
+.download-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.4);
+    /* Transitions for hover smoothly */
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.download-btn:hover {
+    background-color: rgba(245, 245, 245, 0.9);
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #eee;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+#fix-navbar {
+    padding: 0px;
+    height: 20px;
+    width: 100%;
 }
 
 .affix {
     top: 0;
     width: 100%;
     z-index: 100;
-  }
+}
 
 .affix-top {
-  width: 100%;
+    width: 100%;
 }
 
 .affix + .content-box {
-  margin-top: 72px;
+    margin-top: 72px;
 }
 
-.century {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+.go-to-top {
+    /* Bootstrap resource loading is broken :'( */
+    position: absolute !important;
+    right: 10px;
+    top: 0px;
 }
 
-.heading { 
-  font-size: 200px;
-}
+/* Content */
 
-.subHeading {
-  font-size: 70px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 1px;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  margin-top: 50px;
-}
-
-.caption span {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.go-to-top{
-  float: right;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-  text-align:center;
+.content-box h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 22px "Lato", sans-serif;
+    color: #111;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .content-box {
-  color: #777;
-  background-color: white;
-  text-align: center;
-  padding:20px 80px;
-  margin-bottom: 80px;
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.content {
-  margin-top: 0px;
-  text-align: center;
-}
-
-.align-left {
-  margin-left: 500px;
-  text-align: left;
-  width: 250px;
-}
-
-.navbar {
-  background-color: #eee;
-  padding: 0;
-  border-radius: 0px;
-}
-
-.navbar-nav {
-  width: 100%;
-  text-align: center;
-}
-
-.navbar-nav > li {
-  float: none;
-  display: inline-block;
-}
-
-.download-btn {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  border: 2px solid rgb(245, 245, 245);
-  background-color: rgba(245, 245, 245, 0.4);
-  /* Transitions for hover smoothly */
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
-  transition:.2s;
-}
-
-.download-btn:hover {
-  background-color: rgba(245, 245, 245, 0.9);
-  text-decoration: none;
-}
-
-
-#fix-navbar {
-   padding:0px;
-   height:20px;
-   width:100%;
-}
+/* Footer */
 
 .social-btn {
-  text-align: right;
-}
-
-
-.bgimg-1, .bgimg-2 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgimg-1 {
-  background-image: url("../img/OtilBannerNoText.png");
-  height: 600px;
-} 
-
-.bgimg-2 {
-  background-image: url("../img/OtilBannerNoText.png");
-  height: 30px;
+    text-align: right;
 }
 
 .fb-share-button {
-  margin-right: 5px;
-  float: left;
+    margin-right: 5px;
+    float: left;
 }
 
 .licensing {
-  text-align: right; 
-  font-size: 12px;
-  display: block;
-  margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
 }
 
 .media-btn {
-  float: left;
-  margin-right: 5px;
+    float: left;
+    margin-right: 5px;
 }
+
 .footer {
-  color: #ddd;
-  background-color: #282E34;
-  text-align: center;
-  padding: 20px 80px;
-  text-align: justify;
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 20px 80px;
+    text-align: justify;
 }
 
-@media screen and (max-width: 1920px) {
-  .bgimg-1 {
-    height: 800px;
-  }
-  .caption {
-    margin-top: 70px;
-  }
-  .heading {
-    font-size: 250px;
-  }
-  .subHeading {
-    font-size: 90px;
-  }
-  .download-btn {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
-  }
-  .caption span {
-    margin-bottom: 5px;
-  }
-  .social-btn {
-    font-size: 20px;
-  }
-  .licensing {
-    font-size: 15px;
-  }
-  .content {
-    font-size: 20px;
-  }
-  .content-box {
-    font-size: 20px;
-  }
-  .align-left {
-  margin-left: 780px;
-  }
-  .nav {
-    font-size: 18px;
-  }
-} 
 @media screen and (max-width: 1366px) {
-  .bgimg-1 {
-    height: 650px;
-  }
-  .caption {
-    margin-top: 30px;
-  }
-  .heading {
-    font-size: 200px;
-  }
-  .subHeading {
-    font-size: 70px;
-  }
-  .download-btn {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 25px;
-    margin-top: 40px;
-  }
-  .caption span {
-    margin-bottom: 5px;
-  }
-  .social-btn {
-    font-size: 15px;
-  }
-  .licensing {
-    font-size: 12px;
-  }
-  .content {
-    font-size: 15px;
-  }
-  .align-left {
-  margin-left: 510px;
-  }
-  .content-box {
-    font-size: 15px;
-  }
-  .nav {
-    font-size: 15px;
-  }
-} 
-@media screen and (max-width: 1280px) {
-  .bgimg-1 {
-    height: 600px;
-  }
-  .caption {
-    margin-top: 30px;
-  }
-  .heading {
-    font-size: 200px;
-  }
-  .subHeading {
-    font-size: 70px;
-  }
-  .download-btn {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-  
-  .social-btn {
-    font-size: 15px;
-  }
-  .licensing {
-    font-size: 12px;
-  }
-  .content {
-    font-size: 15px;
-  }
-  .content-box {
-    font-size: 15px;
-  }
-  .align-left {
-    margin-left: 320px;
-  }
-  .nav {
-    font-size: 12px;
-  }
-} 
-@media screen and (max-width: 1024px) {
-  .bgimg-1 {
-    height: 540px;
-  }
-  .caption {
-    margin-top: 50px;
-  }
-  .heading {
-    font-size: 140px;
-  }
-  .subHeading {
-    font-size: 50px;
-  }
-  .download-btn {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    margin-top: 30px;
-  }
-  
-  .social-btn {
-    font-size: 13px;
-  }
-  .licensing {
-    font-size: 10px;
-  }
-  .content {
-    font-size: 15px;
-  }
-  .content-box {
-    font-size: 15px;
-  }
-  .align-left {
-    margin-left: 340px;
-  }
-  .nav {
-    font-size: 12px;
-  }
-} 
-@media screen and (max-width: 980px) {
-  .bgimg-1 {
-    height: 550px;
-  }
-  .heading {
-    font-size: 150px;
-  }
-  .subHeading {
-    font-size: 50px;
-  }
-  .download-btn {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .social-btn {
-    font-size: 15px;
-  }
-  .licensing {
-    font-size: 12px;
-  }
-  .content {
-    font-size: 15px;
-  }
-  .content-box {
-    font-size: 15px;
-  }
-  .align-left {
-    margin-left: 320px;
-  }
-  .nav {
-    font-size: 12px;
-  }
-} 
-@media screen and (max-width: 800px) {
-  .bgimg-1 {
-    height: 550px;
-  }
-  .caption {
-    margin-top: 90px;
-  }
-  .heading {
-    font-size: 120px;
-  }
-  .subHeading {
-    font-size: 40px;
-  }
-  .download-btn {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 18px;
-    margin-top: 30px;
-  }
-  
-  .social-btn {
-    font-size: 12px;
-  }
-  .licensing {
-    font-size: 10px;
-  }
-  .content {
-    font-size: 15px;
-  }
-  .content-box {
-    font-size: 15px;
-  }
-  .align-left {
-    margin-left: 220px;
-  }
-  .nav {
-    font-size: 15px;
-  }
-} 
-@media screen and (max-width: 350px) {
-  .bgimg-1 {
-    height: 350px;
-  }
-  .heading {
-    font-size: 70px;
-  }
-  .subHeading {
-    font-size: 15px;
-  }
-  .download-btn {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  .phone-nav{
-    width: 100%;
-  }
+    .caption {
+        margin-top: 30px;
+    }
 
-  .container-fluid{
-    margin-bottom: 20px;
-  }
-  .social-btn {
-    font-size: 12px;
-  }
-  .licensing {
-    font-size: 10px;
-  }
-  .content {
-    font-size: 12px;
-  }
-  .content-box {
-    font-size: 12px;
-  }
-  .align-left {
-    margin-left: 0px;
-  }
-  .go-to-top {
-    display: none;
-  }
-  .hide {
-    display: none;
-  }
-  .glyphicon {
-    display: none;
-  }
-  .glyphicon-arrow-up { 
-    display: none;
-  }
-  .nav {
-    font-size: 11px;
-  }
-  .navbar-nav {
-    margin-left: 0px;
-  }
-  #functionality  {
-    padding-left: 50px;
-  }
-} 
+    .heading {
+        font-size: 180px;
+    }
+
+    .subHeading {
+        font-size: 60px;
+    }
+
+    .download-btn {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .download-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .heading {
+        font-size: 160px;
+    }
+
+    .subHeading {
+        font-size: 50px;
+    }
+}
+/*
+
+@media screen and (max-width: 980px) {
+    .bgimg-1 {
+        height: 550px;
+    }
+
+    .heading {
+        font-size: 150px;
+    }
+
+    .subHeading {
+        font-size: 50px;
+    }
+
+    .download-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .social-btn {
+        font-size: 15px;
+    }
+
+    .licensing {
+        font-size: 12px;
+    }
+
+    .content {
+        font-size: 15px;
+    }
+
+    .content-box {
+        font-size: 15px;
+    }
+
+    .align-left {
+        margin-left: 320px;
+    }
+
+    .nav {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bgimg-1 {
+        height: 550px;
+    }
+
+    .caption {
+        margin-top: 90px;
+    }
+
+    .heading {
+        font-size: 120px;
+    }
+
+    .subHeading {
+        font-size: 40px;
+    }
+
+    .download-btn {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .social-btn {
+        font-size: 12px;
+    }
+
+    .licensing {
+        font-size: 10px;
+    }
+
+    .content {
+        font-size: 15px;
+    }
+
+    .content-box {
+        font-size: 15px;
+    }
+
+    .align-left {
+        margin-left: 220px;
+    }
+
+    .nav {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .bgimg-1 {
+        height: 350px;
+    }
+
+    .heading {
+        font-size: 70px;
+    }
+
+    .subHeading {
+        font-size: 15px;
+    }
+
+    .download-btn {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .phone-nav {
+        width: 100%;
+    }
+
+    .container-fluid {
+        margin-bottom: 20px;
+    }
+
+    .social-btn {
+        font-size: 12px;
+    }
+
+    .licensing {
+        font-size: 10px;
+    }
+
+    .content {
+        font-size: 12px;
+    }
+
+    .content-box {
+        font-size: 12px;
+    }
+
+    .align-left {
+        margin-left: 0px;
+    }
+
+    .go-to-top {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .glyphicon {
+        display: none;
+    }
+
+    .glyphicon-arrow-up {
+        display: none;
+    }
+
+    .nav {
+        font-size: 11px;
+    }
+
+    .navbar-nav {
+        margin-left: 0px;
+    }
+
+    #functionality {
+        padding-left: 50px;
+    }
+} */
